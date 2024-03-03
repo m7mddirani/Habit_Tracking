@@ -1,0 +1,163 @@
+\doxysection{src.\+Daily\+Habit.\+Daily\+Habit Class Reference}
+\hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit}{}\label{classsrc_1_1_daily_habit_1_1_daily_habit}\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+Inheritance diagram for src.\+Daily\+Habit.\+Daily\+Habit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/d5b/classsrc_1_1_daily_habit_1_1_daily_habit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_a55d80baed4feda7657310cb68f8d0e8a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}})
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_a9849ae2f00a6c5f7040a2ae54e0f57be}{calculate\+\_\+end\+\_\+date}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, frequency)
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_a65dbeda2a2e697b27b6f8d24ac29a4f2}{mark\+\_\+completed}} (self, completion\+\_\+date=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_a5cf42d1957b947adb7bb0015cb37e77a}{check\+\_\+streak}} (self, target\+\_\+streak)
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_ac161cf3320ae48a295cfcb5a8a3df313}{get\+\_\+streak\+\_\+count}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit}{src.\+Habit.\+Habit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_af2cae89413b863f0c6de9b74ea38b5a1}{mark\+\_\+as\+\_\+completed}} (self, completion\+\_\+date=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a71325459bb49fd62c680c07f91f6985f}{mark\+\_\+as\+\_\+incomplete}} (self, completion\+\_\+date)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_acffd6d2b0bb27d76113702049c8f4cbf}{end\+\_\+date}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, frequency)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ad2588b2969553f35a825c0def36e364a}{check\+\_\+break}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_ab54817a407f957d14256c23073ebe24c}{streak\+\_\+counter}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_a01f6850f99e3cbe7d8d84f183f38c5ec}{end\+\_\+date}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit}{src.\+Habit.\+Habit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ac3fa05141e5f8d133bc13e57b5d59290}{completed\+\_\+dates}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a19f0aa24d744ebb4db4eb953cb1c6aa9}{broken}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a habit that users can track and mark as completed on a daily basis.
+
+Attributes:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+    end_date (datetime): The end date of the habit.
+    streak_count (int): The current streak count of consecutive completions.
+
+Methods:
+    calculate_end_date(start_date, frequency): Calculates the end date of the daily habit based on the start date and frequency.
+    mark_completed(completion_date=None): Marks the habit as completed for the specified date.
+    check_streak(target_streak): Checks if the habit has a streak of at least the specified number of consecutive days.
+    get_streak_count(): Gets the current streak count of the habit.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_a55d80baed4feda7657310cb68f8d0e8a}\label{classsrc_1_1_daily_habit_1_1_daily_habit_a55d80baed4feda7657310cb68f8d0e8a} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{start\+\_\+date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a DailyHabit object.
+
+Args:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_abde3004371f167df76672991d741914f}{src.\+Habit.\+Habit}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_a9849ae2f00a6c5f7040a2ae54e0f57be}\label{classsrc_1_1_daily_habit_1_1_daily_habit_a9849ae2f00a6c5f7040a2ae54e0f57be} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!calculate\_end\_date@{calculate\_end\_date}}
+\index{calculate\_end\_date@{calculate\_end\_date}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{calculate\_end\_date()}{calculate\_end\_date()}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+calculate\+\_\+end\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start\+\_\+date,  }\item[{}]{frequency }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the end date of the daily habit based on the start date and frequency.
+
+Args:
+    start_date (datetime): The start date of the habit.
+    frequency (int): The frequency of the habit.
+
+Returns:
+    datetime: The calculated end date of the habit.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_a5cf42d1957b947adb7bb0015cb37e77a}\label{classsrc_1_1_daily_habit_1_1_daily_habit_a5cf42d1957b947adb7bb0015cb37e77a} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!check\_streak@{check\_streak}}
+\index{check\_streak@{check\_streak}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{check\_streak()}{check\_streak()}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+check\+\_\+streak (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{target\+\_\+streak }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the habit has a streak of at least the specified number of consecutive days.
+
+Args:
+    target_streak (int): The minimum required streak count.
+
+Returns:
+    bool: True if the habit has a streak equal to or greater than the target_streak, False otherwise.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_ac161cf3320ae48a295cfcb5a8a3df313}\label{classsrc_1_1_daily_habit_1_1_daily_habit_ac161cf3320ae48a295cfcb5a8a3df313} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!get\_streak\_count@{get\_streak\_count}}
+\index{get\_streak\_count@{get\_streak\_count}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{get\_streak\_count()}{get\_streak\_count()}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+get\+\_\+streak\+\_\+count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the current streak count of the habit.
+
+Returns:
+    int: The current streak count of the habit.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_a65dbeda2a2e697b27b6f8d24ac29a4f2}\label{classsrc_1_1_daily_habit_1_1_daily_habit_a65dbeda2a2e697b27b6f8d24ac29a4f2} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!mark\_completed@{mark\_completed}}
+\index{mark\_completed@{mark\_completed}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{mark\_completed()}{mark\_completed()}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+mark\+\_\+completed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{completion\+\_\+date = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks the daily habit as completed for the specified date.
+
+Args:
+    completion_date (datetime): The date on which the habit is completed. Defaults to the current date.
+
+Raises:
+    ValueError: If the completion date is outside the habit period.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_a01f6850f99e3cbe7d8d84f183f38c5ec}\label{classsrc_1_1_daily_habit_1_1_daily_habit_a01f6850f99e3cbe7d8d84f183f38c5ec} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{end\_date}{end\_date}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+end\+\_\+date}
+
+\Hypertarget{classsrc_1_1_daily_habit_1_1_daily_habit_ab54817a407f957d14256c23073ebe24c}\label{classsrc_1_1_daily_habit_1_1_daily_habit_ab54817a407f957d14256c23073ebe24c} 
+\index{src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}!streak\_counter@{streak\_counter}}
+\index{streak\_counter@{streak\_counter}!src.DailyHabit.DailyHabit@{src.DailyHabit.DailyHabit}}
+\doxysubsubsection{\texorpdfstring{streak\_counter}{streak\_counter}}
+{\footnotesize\ttfamily src.\+Daily\+Habit.\+Daily\+Habit.\+streak\+\_\+counter}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_daily_habit_8py}{Daily\+Habit.\+py}}\end{DoxyCompactItemize}

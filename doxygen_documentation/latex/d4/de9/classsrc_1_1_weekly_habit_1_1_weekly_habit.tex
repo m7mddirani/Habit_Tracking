@@ -1,0 +1,136 @@
+\doxysection{src.\+Weekly\+Habit.\+Weekly\+Habit Class Reference}
+\hypertarget{classsrc_1_1_weekly_habit_1_1_weekly_habit}{}\label{classsrc_1_1_weekly_habit_1_1_weekly_habit}\index{src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}}
+Inheritance diagram for src.\+Weekly\+Habit.\+Weekly\+Habit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/de9/classsrc_1_1_weekly_habit_1_1_weekly_habit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_aeb937565c592161067b44574e75c6738}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, \mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_ab6b8512479005a1256115fe4724eafe1}{weekdays}})
+\item 
+\mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_af6c878e7ee913a84275e751fa558f84e}{mark\+\_\+as\+\_\+completed}} (self, completion\+\_\+date=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_a98a9d00a1fa2d3917d0092b3ffcbd8cb}{end\+\_\+date}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, frequency)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit}{src.\+Habit.\+Habit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a71325459bb49fd62c680c07f91f6985f}{mark\+\_\+as\+\_\+incomplete}} (self, completion\+\_\+date)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ad2588b2969553f35a825c0def36e364a}{check\+\_\+break}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_ab6b8512479005a1256115fe4724eafe1}{weekdays}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_a94a8b5d2ca2ca5619896dd83e587763c}{end\+\_\+date}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit}{src.\+Habit.\+Habit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ac3fa05141e5f8d133bc13e57b5d59290}{completed\+\_\+dates}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a19f0aa24d744ebb4db4eb953cb1c6aa9}{broken}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a habit that recurs weekly and can be tracked and marked as completed.
+
+Attributes:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+    weekdays (list): List of weekdays when the habit should be completed (0 for Monday, 1 for Tuesday, ..., 6 for Sunday).
+
+Methods:
+    mark_completed(completion_date=None): Marks the habit as completed for the specified date.
+    calculate_end_date(start_date, frequency): Calculates the end date of the habit based on the start date and frequency.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1_weekly_habit_1_1_weekly_habit_aeb937565c592161067b44574e75c6738}\label{classsrc_1_1_weekly_habit_1_1_weekly_habit_aeb937565c592161067b44574e75c6738} 
+\index{src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily src.\+Weekly\+Habit.\+Weekly\+Habit.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{start\+\_\+date,  }\item[{}]{weekdays }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a WeeklyHabit object.
+
+Args:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+    weekdays (list): List of weekdays when the habit should be completed (0 for Monday, 1 for Tuesday, ..., 6 for Sunday).
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_abde3004371f167df76672991d741914f}{src.\+Habit.\+Habit}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1_weekly_habit_1_1_weekly_habit_a98a9d00a1fa2d3917d0092b3ffcbd8cb}\label{classsrc_1_1_weekly_habit_1_1_weekly_habit_a98a9d00a1fa2d3917d0092b3ffcbd8cb} 
+\index{src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}}
+\doxysubsubsection{\texorpdfstring{end\_date()}{end\_date()}}
+{\footnotesize\ttfamily src.\+Weekly\+Habit.\+Weekly\+Habit.\+end\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start\+\_\+date,  }\item[{}]{frequency }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the end date of the weekly habit based on the start date and frequency.
+
+Args:
+    start_date (datetime): The start date of the habit.
+    frequency (int): The frequency of the habit.
+
+Returns:
+    datetime: The calculated end date of the habit.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_acffd6d2b0bb27d76113702049c8f4cbf}{src.\+Habit.\+Habit}}.
+
+\Hypertarget{classsrc_1_1_weekly_habit_1_1_weekly_habit_af6c878e7ee913a84275e751fa558f84e}\label{classsrc_1_1_weekly_habit_1_1_weekly_habit_af6c878e7ee913a84275e751fa558f84e} 
+\index{src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}!mark\_as\_completed@{mark\_as\_completed}}
+\index{mark\_as\_completed@{mark\_as\_completed}!src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}}
+\doxysubsubsection{\texorpdfstring{mark\_as\_completed()}{mark\_as\_completed()}}
+{\footnotesize\ttfamily src.\+Weekly\+Habit.\+Weekly\+Habit.\+mark\+\_\+as\+\_\+completed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{completion\+\_\+date = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks the weekly habit as completed for the specified date.
+
+Args:
+    completion_date (datetime): The date on which the habit is completed. Defaults to the current date.
+
+Raises:
+    ValueError: If the completion date is not on a specified weekday.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_af2cae89413b863f0c6de9b74ea38b5a1}{src.\+Habit.\+Habit}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1_weekly_habit_1_1_weekly_habit_a94a8b5d2ca2ca5619896dd83e587763c}\label{classsrc_1_1_weekly_habit_1_1_weekly_habit_a94a8b5d2ca2ca5619896dd83e587763c} 
+\index{src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}}
+\doxysubsubsection{\texorpdfstring{end\_date}{end\_date}}
+{\footnotesize\ttfamily src.\+Weekly\+Habit.\+Weekly\+Habit.\+end\+\_\+date}
+
+\Hypertarget{classsrc_1_1_weekly_habit_1_1_weekly_habit_ab6b8512479005a1256115fe4724eafe1}\label{classsrc_1_1_weekly_habit_1_1_weekly_habit_ab6b8512479005a1256115fe4724eafe1} 
+\index{src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}!weekdays@{weekdays}}
+\index{weekdays@{weekdays}!src.WeeklyHabit.WeeklyHabit@{src.WeeklyHabit.WeeklyHabit}}
+\doxysubsubsection{\texorpdfstring{weekdays}{weekdays}}
+{\footnotesize\ttfamily src.\+Weekly\+Habit.\+Weekly\+Habit.\+weekdays}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_weekly_habit_8py}{Weekly\+Habit.\+py}}\end{DoxyCompactItemize}

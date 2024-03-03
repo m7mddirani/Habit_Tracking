@@ -1,0 +1,211 @@
+\doxysection{src.\+statistics\+\_\+1 Namespace Reference}
+\hypertarget{namespacesrc_1_1statistics__1}{}\label{namespacesrc_1_1statistics__1}\index{src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a5ec16abfde3de30fabd34786d0b7fcb9}{daily\+\_\+habits\+\_\+longest\+\_\+streak}} (habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a6940d407174046a1ec9781a248fa00b5}{current\+\_\+daily\+\_\+habits}} (habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a513ed533bd819adc8507a480b0851ba7}{find\+\_\+habits\+\_\+strugled\+\_\+last\+\_\+month}} (habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a75e64d7eb420623024cea30006981023}{all\+\_\+habits}} (habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_aa4add292974b7de531cf6beb885450ea}{habits\+\_\+with\+\_\+same\+\_\+frequency}} (habits, habit\+\_\+type)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a1df4af0b315353ba7267d8199ecfe664}{find\+\_\+longest\+\_\+run\+\_\+streak\+\_\+among\+\_\+all\+\_\+habits}} (habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a74486a73b6e7e4a9a8a24b888095b270}{find\+\_\+longest\+\_\+run\+\_\+streak\+\_\+for\+\_\+specific\+\_\+habit}} (habit)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a9875a60ebe4cc05191c83119d991f6f3}{load\+\_\+habits\+\_\+from\+\_\+json\+\_\+file}} ()
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_ae93b20fd48974e042f979ab0c2509c77}{create\+\_\+dataframe\+\_\+of\+\_\+habit}} (habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a98e67475416ff553911924cc7daaef4d}{view\+\_\+completed\+\_\+habits\+\_\+calender}} (data\+\_\+frame\+\_\+habit)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a7c72f9c9266ccc4f7a7824fa1341d243}{view\+\_\+daily\+\_\+habits\+\_\+streak\+\_\+count}} (data\+\_\+frame\+\_\+daily\+\_\+habits)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a22c0b6f1bfdb50efbcc0eec003b4ea71}{view\+\_\+broken\+\_\+habit}} (data\+\_\+frame\+\_\+habit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a7099c2bdaaafd1a728b1ea5a983a3396}{current\+\_\+dir}} = os.\+path.\+dirname(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\item 
+\mbox{\hyperlink{namespacesrc_1_1statistics__1_a3d964ba34e939869b9ba03dfb4d26ac2}{parent\+\_\+dir}} = os.\+path.\+abspath(os.\+path.\+join(\mbox{\hyperlink{namespacesrc_1_1statistics__1_a7099c2bdaaafd1a728b1ea5a983a3396}{current\+\_\+dir}}, os.\+pardir))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesrc_1_1statistics__1_a75e64d7eb420623024cea30006981023}\label{namespacesrc_1_1statistics__1_a75e64d7eb420623024cea30006981023} 
+\index{src.statistics\_1@{src.statistics\_1}!all\_habits@{all\_habits}}
+\index{all\_habits@{all\_habits}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{all\_habits()}{all\_habits()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+all\+\_\+habits (\begin{DoxyParamCaption}\item[{}]{habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieves names of all currently tracked habits.
+
+Args:
+    habits (list): List of Habit objects.
+
+Returns:
+    list: Names of all currently tracked habits.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_ae93b20fd48974e042f979ab0c2509c77}\label{namespacesrc_1_1statistics__1_ae93b20fd48974e042f979ab0c2509c77} 
+\index{src.statistics\_1@{src.statistics\_1}!create\_dataframe\_of\_habit@{create\_dataframe\_of\_habit}}
+\index{create\_dataframe\_of\_habit@{create\_dataframe\_of\_habit}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{create\_dataframe\_of\_habit()}{create\_dataframe\_of\_habit()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+create\+\_\+dataframe\+\_\+of\+\_\+habit (\begin{DoxyParamCaption}\item[{}]{habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a pandas DataFrame containing information about each habit.
+
+Args:
+    habits (list): List of Habit objects.
+
+Returns:
+    pd.DataFrame: DataFrame with habit information.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a6940d407174046a1ec9781a248fa00b5}\label{namespacesrc_1_1statistics__1_a6940d407174046a1ec9781a248fa00b5} 
+\index{src.statistics\_1@{src.statistics\_1}!current\_daily\_habits@{current\_daily\_habits}}
+\index{current\_daily\_habits@{current\_daily\_habits}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{current\_daily\_habits()}{current\_daily\_habits()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+current\+\_\+daily\+\_\+habits (\begin{DoxyParamCaption}\item[{}]{habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieves names of currently tracked daily habits.
+
+Args:
+    habits (list): List of Habit objects.
+
+Returns:
+    list: Names of currently tracked daily habits.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a5ec16abfde3de30fabd34786d0b7fcb9}\label{namespacesrc_1_1statistics__1_a5ec16abfde3de30fabd34786d0b7fcb9} 
+\index{src.statistics\_1@{src.statistics\_1}!daily\_habits\_longest\_streak@{daily\_habits\_longest\_streak}}
+\index{daily\_habits\_longest\_streak@{daily\_habits\_longest\_streak}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{daily\_habits\_longest\_streak()}{daily\_habits\_longest\_streak()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+daily\+\_\+habits\+\_\+longest\+\_\+streak (\begin{DoxyParamCaption}\item[{}]{habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds the longest streak among daily habits.
+
+Args:
+    habits (list): List of Habit objects.
+
+Returns:
+    int: Length of the longest streak among daily habits.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a513ed533bd819adc8507a480b0851ba7}\label{namespacesrc_1_1statistics__1_a513ed533bd819adc8507a480b0851ba7} 
+\index{src.statistics\_1@{src.statistics\_1}!find\_habits\_strugled\_last\_month@{find\_habits\_strugled\_last\_month}}
+\index{find\_habits\_strugled\_last\_month@{find\_habits\_strugled\_last\_month}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{find\_habits\_strugled\_last\_month()}{find\_habits\_strugled\_last\_month()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+find\+\_\+habits\+\_\+strugled\+\_\+last\+\_\+month (\begin{DoxyParamCaption}\item[{}]{habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds habits that were struggled with last month.
+
+Args:
+    habits (list): List of Habit objects.
+
+Returns:
+    list: Names of habits that were struggled with last month.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a1df4af0b315353ba7267d8199ecfe664}\label{namespacesrc_1_1statistics__1_a1df4af0b315353ba7267d8199ecfe664} 
+\index{src.statistics\_1@{src.statistics\_1}!find\_longest\_run\_streak\_among\_all\_habits@{find\_longest\_run\_streak\_among\_all\_habits}}
+\index{find\_longest\_run\_streak\_among\_all\_habits@{find\_longest\_run\_streak\_among\_all\_habits}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{find\_longest\_run\_streak\_among\_all\_habits()}{find\_longest\_run\_streak\_among\_all\_habits()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+find\+\_\+longest\+\_\+run\+\_\+streak\+\_\+among\+\_\+all\+\_\+habits (\begin{DoxyParamCaption}\item[{}]{habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds the longest run streak among all habits.
+
+Args:
+    habits (list): List of Habit objects.
+
+Returns:
+    int: Length of the longest run streak among all habits.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a74486a73b6e7e4a9a8a24b888095b270}\label{namespacesrc_1_1statistics__1_a74486a73b6e7e4a9a8a24b888095b270} 
+\index{src.statistics\_1@{src.statistics\_1}!find\_longest\_run\_streak\_for\_specific\_habit@{find\_longest\_run\_streak\_for\_specific\_habit}}
+\index{find\_longest\_run\_streak\_for\_specific\_habit@{find\_longest\_run\_streak\_for\_specific\_habit}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{find\_longest\_run\_streak\_for\_specific\_habit()}{find\_longest\_run\_streak\_for\_specific\_habit()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+find\+\_\+longest\+\_\+run\+\_\+streak\+\_\+for\+\_\+specific\+\_\+habit (\begin{DoxyParamCaption}\item[{}]{habit }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds the longest run streak for a specific habit.
+
+Args:
+    habit (Habit): A specific Habit object.
+
+Returns:
+    int: Length of the longest run streak for the specified habit.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_aa4add292974b7de531cf6beb885450ea}\label{namespacesrc_1_1statistics__1_aa4add292974b7de531cf6beb885450ea} 
+\index{src.statistics\_1@{src.statistics\_1}!habits\_with\_same\_frequency@{habits\_with\_same\_frequency}}
+\index{habits\_with\_same\_frequency@{habits\_with\_same\_frequency}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{habits\_with\_same\_frequency()}{habits\_with\_same\_frequency()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+habits\+\_\+with\+\_\+same\+\_\+frequency (\begin{DoxyParamCaption}\item[{}]{habits,  }\item[{}]{habit\+\_\+type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieves names of habits with the same periodicity.
+
+Args:
+    habits (list): List of Habit objects.
+    habit_type (type): Type of Habit (DailyHabit, WeeklyHabit, MonthlyHabit).
+
+Returns:
+    list: Names of habits with the specified periodicity.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a9875a60ebe4cc05191c83119d991f6f3}\label{namespacesrc_1_1statistics__1_a9875a60ebe4cc05191c83119d991f6f3} 
+\index{src.statistics\_1@{src.statistics\_1}!load\_habits\_from\_json\_file@{load\_habits\_from\_json\_file}}
+\index{load\_habits\_from\_json\_file@{load\_habits\_from\_json\_file}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{load\_habits\_from\_json\_file()}{load\_habits\_from\_json\_file()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+load\+\_\+habits\+\_\+from\+\_\+json\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads habits from a JSON file.
+
+Returns:
+    list: List of Habit objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a22c0b6f1bfdb50efbcc0eec003b4ea71}\label{namespacesrc_1_1statistics__1_a22c0b6f1bfdb50efbcc0eec003b4ea71} 
+\index{src.statistics\_1@{src.statistics\_1}!view\_broken\_habit@{view\_broken\_habit}}
+\index{view\_broken\_habit@{view\_broken\_habit}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{view\_broken\_habit()}{view\_broken\_habit()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+view\+\_\+broken\+\_\+habit (\begin{DoxyParamCaption}\item[{}]{data\+\_\+frame\+\_\+habit }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Visualizes the broken status for each habit using a bar chart.
+
+Args:
+    data_frame_habit (pd.DataFrame): DataFrame with habit information.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a98e67475416ff553911924cc7daaef4d}\label{namespacesrc_1_1statistics__1_a98e67475416ff553911924cc7daaef4d} 
+\index{src.statistics\_1@{src.statistics\_1}!view\_completed\_habits\_calender@{view\_completed\_habits\_calender}}
+\index{view\_completed\_habits\_calender@{view\_completed\_habits\_calender}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{view\_completed\_habits\_calender()}{view\_completed\_habits\_calender()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+view\+\_\+completed\+\_\+habits\+\_\+calender (\begin{DoxyParamCaption}\item[{}]{data\+\_\+frame\+\_\+habit }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Visualizes the number of completed dates for each habit using a bar chart.
+
+Args:
+    data_frame_habit (pd.DataFrame): DataFrame with habit information.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1statistics__1_a7c72f9c9266ccc4f7a7824fa1341d243}\label{namespacesrc_1_1statistics__1_a7c72f9c9266ccc4f7a7824fa1341d243} 
+\index{src.statistics\_1@{src.statistics\_1}!view\_daily\_habits\_streak\_count@{view\_daily\_habits\_streak\_count}}
+\index{view\_daily\_habits\_streak\_count@{view\_daily\_habits\_streak\_count}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{view\_daily\_habits\_streak\_count()}{view\_daily\_habits\_streak\_count()}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+view\+\_\+daily\+\_\+habits\+\_\+streak\+\_\+count (\begin{DoxyParamCaption}\item[{}]{data\+\_\+frame\+\_\+daily\+\_\+habits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Visualizes the streak count for daily habits using a bar chart.
+
+Args:
+    data_frame_daily_habits (pd.DataFrame): DataFrame with daily habit information.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacesrc_1_1statistics__1_a7099c2bdaaafd1a728b1ea5a983a3396}\label{namespacesrc_1_1statistics__1_a7099c2bdaaafd1a728b1ea5a983a3396} 
+\index{src.statistics\_1@{src.statistics\_1}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+current\+\_\+dir = os.\+path.\+dirname(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))}
+
+\Hypertarget{namespacesrc_1_1statistics__1_a3d964ba34e939869b9ba03dfb4d26ac2}\label{namespacesrc_1_1statistics__1_a3d964ba34e939869b9ba03dfb4d26ac2} 
+\index{src.statistics\_1@{src.statistics\_1}!parent\_dir@{parent\_dir}}
+\index{parent\_dir@{parent\_dir}!src.statistics\_1@{src.statistics\_1}}
+\doxysubsubsection{\texorpdfstring{parent\_dir}{parent\_dir}}
+{\footnotesize\ttfamily src.\+statistics\+\_\+1.\+parent\+\_\+dir = os.\+path.\+abspath(os.\+path.\+join(\mbox{\hyperlink{namespacesrc_1_1statistics__1_a7099c2bdaaafd1a728b1ea5a983a3396}{current\+\_\+dir}}, os.\+pardir))}
+

@@ -1,0 +1,140 @@
+\doxysection{src.\+Monthly\+Habit.\+Monthly\+Habit Class Reference}
+\hypertarget{classsrc_1_1_monthly_habit_1_1_monthly_habit}{}\label{classsrc_1_1_monthly_habit_1_1_monthly_habit}\index{src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}}
+Inheritance diagram for src.\+Monthly\+Habit.\+Monthly\+Habit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{db/d60/classsrc_1_1_monthly_habit_1_1_monthly_habit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_ab1cf2f644a1f8089078ae82f2e7c90d7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, \mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_a2552019070066b9d94fb29dec6feb530}{target\+\_\+days}})
+\item 
+\mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_a841cfbd8deb5dd4afe5270beee3a0eac}{mark\+\_\+completed}} (self, completion\+\_\+date=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_aae16e2f230fe4fd41bb5dce6bea1624b}{end\+\_\+date}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, frequency)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit}{src.\+Habit.\+Habit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_af2cae89413b863f0c6de9b74ea38b5a1}{mark\+\_\+as\+\_\+completed}} (self, completion\+\_\+date=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a71325459bb49fd62c680c07f91f6985f}{mark\+\_\+as\+\_\+incomplete}} (self, completion\+\_\+date)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ad2588b2969553f35a825c0def36e364a}{check\+\_\+break}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_a2552019070066b9d94fb29dec6feb530}{target\+\_\+days}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_a343496e9929d2821ee6914456692317c}{end\+\_\+date}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit}{src.\+Habit.\+Habit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ac3fa05141e5f8d133bc13e57b5d59290}{completed\+\_\+dates}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a19f0aa24d744ebb4db4eb953cb1c6aa9}{broken}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a habit that repeats monthly and can be tracked and marked as completed.
+
+Args:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+    target_days (list): List of days in the month when the habit should be completed.
+
+Attributes:
+    target_days (list): List of days in the month when the habit should be completed.
+
+Inherits from:
+    Habit
+
+Methods:
+    mark_completed(completion_date=None): Marks the habit as completed for the specified date.
+    calculate_end_date(start_date, frequency): Calculates the end date of the habit based on the start date and frequency.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1_monthly_habit_1_1_monthly_habit_ab1cf2f644a1f8089078ae82f2e7c90d7}\label{classsrc_1_1_monthly_habit_1_1_monthly_habit_ab1cf2f644a1f8089078ae82f2e7c90d7} 
+\index{src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily src.\+Monthly\+Habit.\+Monthly\+Habit.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{start\+\_\+date,  }\item[{}]{target\+\_\+days }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a MonthlyHabit object.
+
+Args:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+    target_days (list): List of days in the month when the habit should be completed.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_abde3004371f167df76672991d741914f}{src.\+Habit.\+Habit}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1_monthly_habit_1_1_monthly_habit_aae16e2f230fe4fd41bb5dce6bea1624b}\label{classsrc_1_1_monthly_habit_1_1_monthly_habit_aae16e2f230fe4fd41bb5dce6bea1624b} 
+\index{src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}}
+\doxysubsubsection{\texorpdfstring{end\_date()}{end\_date()}}
+{\footnotesize\ttfamily src.\+Monthly\+Habit.\+Monthly\+Habit.\+end\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start\+\_\+date,  }\item[{}]{frequency }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the end date of the monthly habit based on the start date and frequency.
+
+Args:
+    start_date (datetime): The start date of the habit.
+    frequency (int): The frequency of the habit.
+
+Returns:
+    datetime: The calculated end date of the habit.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_acffd6d2b0bb27d76113702049c8f4cbf}{src.\+Habit.\+Habit}}.
+
+\Hypertarget{classsrc_1_1_monthly_habit_1_1_monthly_habit_a841cfbd8deb5dd4afe5270beee3a0eac}\label{classsrc_1_1_monthly_habit_1_1_monthly_habit_a841cfbd8deb5dd4afe5270beee3a0eac} 
+\index{src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}!mark\_completed@{mark\_completed}}
+\index{mark\_completed@{mark\_completed}!src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}}
+\doxysubsubsection{\texorpdfstring{mark\_completed()}{mark\_completed()}}
+{\footnotesize\ttfamily src.\+Monthly\+Habit.\+Monthly\+Habit.\+mark\+\_\+completed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{completion\+\_\+date = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks the monthly habit as completed for the specified date.
+
+Args:
+    completion_date (datetime): The date on which the habit is completed. Defaults to the current date.
+
+Raises:
+    ValueError: If the completion date is not on a specified day.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1_monthly_habit_1_1_monthly_habit_a343496e9929d2821ee6914456692317c}\label{classsrc_1_1_monthly_habit_1_1_monthly_habit_a343496e9929d2821ee6914456692317c} 
+\index{src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}}
+\doxysubsubsection{\texorpdfstring{end\_date}{end\_date}}
+{\footnotesize\ttfamily src.\+Monthly\+Habit.\+Monthly\+Habit.\+end\+\_\+date}
+
+\Hypertarget{classsrc_1_1_monthly_habit_1_1_monthly_habit_a2552019070066b9d94fb29dec6feb530}\label{classsrc_1_1_monthly_habit_1_1_monthly_habit_a2552019070066b9d94fb29dec6feb530} 
+\index{src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}!target\_days@{target\_days}}
+\index{target\_days@{target\_days}!src.MonthlyHabit.MonthlyHabit@{src.MonthlyHabit.MonthlyHabit}}
+\doxysubsubsection{\texorpdfstring{target\_days}{target\_days}}
+{\footnotesize\ttfamily src.\+Monthly\+Habit.\+Monthly\+Habit.\+target\+\_\+days}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_monthly_habit_8py}{Monthly\+Habit.\+py}}\end{DoxyCompactItemize}
