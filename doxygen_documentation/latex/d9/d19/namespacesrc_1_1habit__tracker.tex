@@ -1,0 +1,63 @@
+\doxysection{src.\+habit\+\_\+tracker Namespace Reference}
+\hypertarget{namespacesrc_1_1habit__tracker}{}\label{namespacesrc_1_1habit__tracker}\index{src.habit\_tracker@{src.habit\_tracker}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesrc_1_1habit__tracker_ac8c20dcc6b46a198921efb547643ae55}{save\+\_\+habits\+\_\+to\+\_\+json\+\_\+file}} (habits, filename)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1habit__tracker_a64bced994ab13b2905067f20d931e12a}{load\+\_\+habits\+\_\+from\+\_\+json\+\_\+file}} (filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesrc_1_1habit__tracker_a9b0c4d6cc3db099df72071c6464975c6}{current\+\_\+dir}} = os.\+path.\+dirname(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\item 
+\mbox{\hyperlink{namespacesrc_1_1habit__tracker_ab838d5a7537806e2c8aba6c02e6c2137}{parent\+\_\+dir}} = os.\+path.\+abspath(os.\+path.\+join(\mbox{\hyperlink{namespacesrc_1_1habit__tracker_a9b0c4d6cc3db099df72071c6464975c6}{current\+\_\+dir}}, os.\+pardir))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesrc_1_1habit__tracker_a64bced994ab13b2905067f20d931e12a}\label{namespacesrc_1_1habit__tracker_a64bced994ab13b2905067f20d931e12a} 
+\index{src.habit\_tracker@{src.habit\_tracker}!load\_habits\_from\_json\_file@{load\_habits\_from\_json\_file}}
+\index{load\_habits\_from\_json\_file@{load\_habits\_from\_json\_file}!src.habit\_tracker@{src.habit\_tracker}}
+\doxysubsubsection{\texorpdfstring{load\_habits\_from\_json\_file()}{load\_habits\_from\_json\_file()}}
+{\footnotesize\ttfamily src.\+habit\+\_\+tracker.\+load\+\_\+habits\+\_\+from\+\_\+json\+\_\+file (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a list of habit objects from a JSON file.
+
+Args:
+    filename (str): The name of the JSON file.
+
+Returns:
+    list: List of loaded Habit objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1habit__tracker_ac8c20dcc6b46a198921efb547643ae55}\label{namespacesrc_1_1habit__tracker_ac8c20dcc6b46a198921efb547643ae55} 
+\index{src.habit\_tracker@{src.habit\_tracker}!save\_habits\_to\_json\_file@{save\_habits\_to\_json\_file}}
+\index{save\_habits\_to\_json\_file@{save\_habits\_to\_json\_file}!src.habit\_tracker@{src.habit\_tracker}}
+\doxysubsubsection{\texorpdfstring{save\_habits\_to\_json\_file()}{save\_habits\_to\_json\_file()}}
+{\footnotesize\ttfamily src.\+habit\+\_\+tracker.\+save\+\_\+habits\+\_\+to\+\_\+json\+\_\+file (\begin{DoxyParamCaption}\item[{}]{habits,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves a list of habit objects to a JSON file.
+
+Args:
+    habits (list): List of Habit objects to be saved.
+    filename (str): The name of the JSON file.
+
+Returns:
+    None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacesrc_1_1habit__tracker_a9b0c4d6cc3db099df72071c6464975c6}\label{namespacesrc_1_1habit__tracker_a9b0c4d6cc3db099df72071c6464975c6} 
+\index{src.habit\_tracker@{src.habit\_tracker}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!src.habit\_tracker@{src.habit\_tracker}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily src.\+habit\+\_\+tracker.\+current\+\_\+dir = os.\+path.\+dirname(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))}
+
+\Hypertarget{namespacesrc_1_1habit__tracker_ab838d5a7537806e2c8aba6c02e6c2137}\label{namespacesrc_1_1habit__tracker_ab838d5a7537806e2c8aba6c02e6c2137} 
+\index{src.habit\_tracker@{src.habit\_tracker}!parent\_dir@{parent\_dir}}
+\index{parent\_dir@{parent\_dir}!src.habit\_tracker@{src.habit\_tracker}}
+\doxysubsubsection{\texorpdfstring{parent\_dir}{parent\_dir}}
+{\footnotesize\ttfamily src.\+habit\+\_\+tracker.\+parent\+\_\+dir = os.\+path.\+abspath(os.\+path.\+join(\mbox{\hyperlink{namespacesrc_1_1habit__tracker_a9b0c4d6cc3db099df72071c6464975c6}{current\+\_\+dir}}, os.\+pardir))}
+

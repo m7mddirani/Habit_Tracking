@@ -1,0 +1,78 @@
+\doxysection{src.\+main Namespace Reference}
+\hypertarget{namespacesrc_1_1main}{}\label{namespacesrc_1_1main}\index{src.main@{src.main}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesrc_1_1main_a457d2c2a1fa69c2a268909a839c1577f}{start\+\_\+new}} ()
+\item 
+\mbox{\hyperlink{namespacesrc_1_1main_a5ec3ff2d6b9efcbc57adbcfc268b912d}{show\+\_\+statistics}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesrc_1_1main_a5ec3ff2d6b9efcbc57adbcfc268b912d}\label{namespacesrc_1_1main_a5ec3ff2d6b9efcbc57adbcfc268b912d} 
+\index{src.main@{src.main}!show\_statistics@{show\_statistics}}
+\index{show\_statistics@{show\_statistics}!src.main@{src.main}}
+\doxysubsubsection{\texorpdfstring{show\_statistics()}{show\_statistics()}}
+{\footnotesize\ttfamily src.\+main.\+show\+\_\+statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function demonstrates habit statistics.
+
+It loads habits from a JSON file, showcases different statistics,
+and visualizes completed dates, streak count, and broken status using Pandas and Matplotlib.
+
+Example:
+- To find the longest habit streak:
+  print(longest_streak(habits))
+
+- To find current daily habits:
+  print(current_daily_habits(habits))
+
+- To find habits struggled last month:
+  habits_struggled_last_month(habits)
+
+- To find all tracked habits:
+  print(all_habits(habits))
+
+- To find habits with the same periodicity (Enter DailyHabit, MonthlyHabit, or WeeklyHabit):
+  print(habits_same_frequency(habits , DailyHabit))
+
+- To visualize completed dates:
+  visualize_completed_dates(habit_df)
+
+- To visualize streak count for daily habits:
+  visualize_streak_count(daily_habits_df)
+
+- To visualize broken status:
+  visualize_broken_status(habit_df)
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1main_a457d2c2a1fa69c2a268909a839c1577f}\label{namespacesrc_1_1main_a457d2c2a1fa69c2a268909a839c1577f} 
+\index{src.main@{src.main}!start\_new@{start\_new}}
+\index{start\_new@{start\_new}!src.main@{src.main}}
+\doxysubsubsection{\texorpdfstring{start\_new()}{start\_new()}}
+{\footnotesize\ttfamily src.\+main.\+start\+\_\+new (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function demonstrates adding and tracking habits.
+
+It creates instances of DailyHabit, WeeklyHabit, and MonthlyHabit,
+checks off some habits, and demonstrates various methods.
+
+Example:
+- To mark a habit as completed:
+  brushteath_daily.mark_as_completed(start_date + timedelta(days=1))
+  brushteath_daily.mark_as_completed(start_date + timedelta(days=2))
+  Exercise_weekly.mark_as_completed(datetime(2024, 1, 15))
+
+- To check the break status of a habit:
+  print(anycourse_study_weekly.check_break())
+
+- To check the streak with a specific target:
+  print(brushteath_daily.check_streak(target_streak=5))
+
+- To get the streak count:
+  print(brushteath_daily.get_streak_count())
+
+- Save habits to a JSON file:
+  save_habits_to_json([brushteath_daily, cleaningroom_daily, Exercise_weekly, anycourse_study_weekly, skills_monthly, visiting_firends_Monthly], 'habits.json')
+\end{DoxyVerb}
+ 

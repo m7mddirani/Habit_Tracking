@@ -1,0 +1,156 @@
+\doxysection{src.\+Habit.\+Habit Class Reference}
+\hypertarget{classsrc_1_1_habit_1_1_habit}{}\label{classsrc_1_1_habit_1_1_habit}\index{src.Habit.Habit@{src.Habit.Habit}}
+Inheritance diagram for src.\+Habit.\+Habit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.924399cm]{d2/d57/classsrc_1_1_habit_1_1_habit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_abde3004371f167df76672991d741914f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}})
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_af2cae89413b863f0c6de9b74ea38b5a1}{mark\+\_\+as\+\_\+completed}} (self, completion\+\_\+date=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a71325459bb49fd62c680c07f91f6985f}{mark\+\_\+as\+\_\+incomplete}} (self, completion\+\_\+date)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_acffd6d2b0bb27d76113702049c8f4cbf}{end\+\_\+date}} (self, \mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}, frequency)
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ad2588b2969553f35a825c0def36e364a}{check\+\_\+break}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}{name}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}{start\+\_\+date}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_ac3fa05141e5f8d133bc13e57b5d59290}{completed\+\_\+dates}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_habit_1_1_habit_a19f0aa24d744ebb4db4eb953cb1c6aa9}{broken}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a habit that users can track and mark as completed.
+
+Attributes:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+    completed_dates (set): Dates on which the habit was completed.
+    broken (bool): Indicates whether the habit has been broken.
+
+Methods:
+    mark_completed(completion_date=None): Marks the habit as completed for the specified date.
+    mark_incomplete(completion_date): Marks the habit as incomplete for the specified date.
+    calculate_end_date(start_date, frequency): Calculates the end date of the habit.
+    check_break_status(): Checks if the habit has been broken.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1_habit_1_1_habit_abde3004371f167df76672991d741914f}\label{classsrc_1_1_habit_1_1_habit_abde3004371f167df76672991d741914f} 
+\index{src.Habit.Habit@{src.Habit.Habit}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{start\+\_\+date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a Habit instance.
+
+Parameters:
+    name (str): The name of the habit.
+    start_date (datetime): The start date of the habit.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsrc_1_1_daily_habit_1_1_daily_habit_a55d80baed4feda7657310cb68f8d0e8a}{src.\+Daily\+Habit.\+Daily\+Habit}}, \mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_ab1cf2f644a1f8089078ae82f2e7c90d7}{src.\+Monthly\+Habit.\+Monthly\+Habit}}, and \mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_aeb937565c592161067b44574e75c6738}{src.\+Weekly\+Habit.\+Weekly\+Habit}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1_habit_1_1_habit_ad2588b2969553f35a825c0def36e364a}\label{classsrc_1_1_habit_1_1_habit_ad2588b2969553f35a825c0def36e364a} 
+\index{src.Habit.Habit@{src.Habit.Habit}!check\_break@{check\_break}}
+\index{check\_break@{check\_break}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{check\_break()}{check\_break()}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+check\+\_\+break (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the habit has been broken based on completion status.
+
+Returns:
+    bool: True if the habit is broken (not completed at all), False otherwise.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1_habit_1_1_habit_acffd6d2b0bb27d76113702049c8f4cbf}\label{classsrc_1_1_habit_1_1_habit_acffd6d2b0bb27d76113702049c8f4cbf} 
+\index{src.Habit.Habit@{src.Habit.Habit}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{end\_date()}{end\_date()}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+end\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start\+\_\+date,  }\item[{}]{frequency }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the end date of the habit based on the start date and frequency.
+
+Parameters:
+    start_date (datetime): The start date of the habit.
+    frequency (int): The frequency of the habit.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsrc_1_1_monthly_habit_1_1_monthly_habit_aae16e2f230fe4fd41bb5dce6bea1624b}{src.\+Monthly\+Habit.\+Monthly\+Habit}}, and \mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_a98a9d00a1fa2d3917d0092b3ffcbd8cb}{src.\+Weekly\+Habit.\+Weekly\+Habit}}.
+
+\Hypertarget{classsrc_1_1_habit_1_1_habit_af2cae89413b863f0c6de9b74ea38b5a1}\label{classsrc_1_1_habit_1_1_habit_af2cae89413b863f0c6de9b74ea38b5a1} 
+\index{src.Habit.Habit@{src.Habit.Habit}!mark\_as\_completed@{mark\_as\_completed}}
+\index{mark\_as\_completed@{mark\_as\_completed}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{mark\_as\_completed()}{mark\_as\_completed()}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+mark\+\_\+as\+\_\+completed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{completion\+\_\+date = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks the habit as completed for the specified date.
+
+Parameters:
+    completion_date (datetime, optional): The date on which the habit is completed. Defaults to the current date.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsrc_1_1_weekly_habit_1_1_weekly_habit_af6c878e7ee913a84275e751fa558f84e}{src.\+Weekly\+Habit.\+Weekly\+Habit}}.
+
+\Hypertarget{classsrc_1_1_habit_1_1_habit_a71325459bb49fd62c680c07f91f6985f}\label{classsrc_1_1_habit_1_1_habit_a71325459bb49fd62c680c07f91f6985f} 
+\index{src.Habit.Habit@{src.Habit.Habit}!mark\_as\_incomplete@{mark\_as\_incomplete}}
+\index{mark\_as\_incomplete@{mark\_as\_incomplete}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{mark\_as\_incomplete()}{mark\_as\_incomplete()}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+mark\+\_\+as\+\_\+incomplete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{completion\+\_\+date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks the habit as incomplete for the specified date.
+
+Parameters:
+    completion_date (datetime): The date on which the habit is marked incomplete.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1_habit_1_1_habit_a19f0aa24d744ebb4db4eb953cb1c6aa9}\label{classsrc_1_1_habit_1_1_habit_a19f0aa24d744ebb4db4eb953cb1c6aa9} 
+\index{src.Habit.Habit@{src.Habit.Habit}!broken@{broken}}
+\index{broken@{broken}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{broken}{broken}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+broken}
+
+\Hypertarget{classsrc_1_1_habit_1_1_habit_ac3fa05141e5f8d133bc13e57b5d59290}\label{classsrc_1_1_habit_1_1_habit_ac3fa05141e5f8d133bc13e57b5d59290} 
+\index{src.Habit.Habit@{src.Habit.Habit}!completed\_dates@{completed\_dates}}
+\index{completed\_dates@{completed\_dates}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{completed\_dates}{completed\_dates}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+completed\+\_\+dates}
+
+\Hypertarget{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9}\label{classsrc_1_1_habit_1_1_habit_a508b4c302d2170f8ff920dc5fd3880b9} 
+\index{src.Habit.Habit@{src.Habit.Habit}!name@{name}}
+\index{name@{name}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+name}
+
+\Hypertarget{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee}\label{classsrc_1_1_habit_1_1_habit_a6c9158e5a1eb144b74d3d048d61e78ee} 
+\index{src.Habit.Habit@{src.Habit.Habit}!start\_date@{start\_date}}
+\index{start\_date@{start\_date}!src.Habit.Habit@{src.Habit.Habit}}
+\doxysubsubsection{\texorpdfstring{start\_date}{start\_date}}
+{\footnotesize\ttfamily src.\+Habit.\+Habit.\+start\+\_\+date}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_habit_8py}{Habit.\+py}}\end{DoxyCompactItemize}
